@@ -173,27 +173,6 @@ if (CONFIG.endereco.trim()) {
   mapLink.hidden = false;
 }
 
-/* =========================================
-   ESCOLHA DO TAMANHO DA FRALDA
-========================================= */
-
-sizeOptions.forEach(button => {
-  button.addEventListener("click", () => {
-    selectedSize = button.dataset.size;
-
-    sizeOptions.forEach(option => {
-      const isSelected = option === button;
-
-      option.setAttribute("aria-pressed", String(isSelected));
-    });
-
-    sizeHelp.textContent =
-      `Você escolheu fralda tamanho ${selectedSize}. ` +
-      "Essa escolha será incluída na mensagem do WhatsApp.";
-
-    createSparkles(5);
-  });
-});
 
 /* =========================================
    CONFIRMAÇÃO PELO WHATSAPP
@@ -210,9 +189,6 @@ rsvpButton.addEventListener("click", () => {
     return;
   }
 
-  const diaperMessage = selectedSize
-    ? `\nSugestão de fralda: tamanho ${selectedSize}.`
-    : "\nAinda não escolhi o tamanho da fralda.";
 
   const message =
     `Olá! Vim pelo convite da festa da ${CONFIG.nomeAniversariante} ` +

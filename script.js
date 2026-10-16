@@ -10,7 +10,7 @@ const CONFIG = {
   endereco: "",              // Endereço para abrir no mapa
   nomeAniversariante: "Alice",
   idade: 6,
-  nomeBebe: "Arthur",
+  nomeBebe: "Liz",
   data: "14/01/2027"
 };
 
@@ -210,7 +210,7 @@ rsvpButton.addEventListener("click", () => {
 
   const message =
     `Olá! Vim pelo convite da festa da ${CONFIG.nomeAniversariante} ` +
-    `e do chá de bebê do ${CONFIG.nomeBebe}.\n\n` +
+    `e do chá de bebê da ${CONFIG.nomeBebe}.\n\n` +
     `Gostaria de confirmar minha presença no dia ${CONFIG.data}.` +
     diaperMessage +
     "\n\nAté lá! ❤️";

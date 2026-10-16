@@ -184,14 +184,9 @@ sizeOptions.forEach(button => {
     sizeOptions.forEach(option => {
       const isSelected = option === button;
 
-      option.setAttribute("aria-pressed", String(isSelected));
     });
 
-    sizeHelp.textContent =
-      `Você escolheu fralda tamanho ${selectedSize}. ` +
-      "Essa escolha será incluída na mensagem do WhatsApp.";
-
-    createSparkles(5);
+  
   });
 });
 
@@ -199,24 +194,33 @@ sizeOptions.forEach(button => {
    CONFIRMAÇÃO PELO WHATSAPP
 ========================================= */
 
-r/* =========================================
-   CONFIRMAÇÃO PELO WHATSAPP
-========================================= */
-
 rsvpButton.addEventListener("click", () => {
   const phone = CONFIG.whatsapp.replace(/\D/g, "");
+
+  if (!phone || phone === "5511994316716") {
+    alert(
+      "Convite sendo enviado "
+    );
+    return;
+  }
+
+  const diaperMessage = selectedSize
+    ? `\nSugestão de fralda: tamanho ${selectedSize}.`
+    : "\nAinda não escolhi o tamanho da fralda.";
 
   const message =
     `Olá! Vim pelo convite da festa da ${CONFIG.nomeAniversariante} ` +
     `e do chá de bebê do ${CONFIG.nomeBebe}.\n\n` +
-    `Gostaria de confirmar minha presença no dia ${CONFIG.data}.\n\n` +
-    "Até lá! ❤️";
+    `Gostaria de confirmar minha presença no dia ${CONFIG.data}.` +
+    diaperMessage +
+    "\n\nAté lá! ❤️";
 
   const whatsappURL =
     `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   window.open(whatsappURL, "_blank", "noopener,noreferrer");
 });
+
 /* =========================================
    BOTÃO VOLTAR AO TOPO
 ========================================= */

@@ -4,7 +4,7 @@
 ========================================= */
 
 const CONFIG = {
-  whatsapp: "5511999999999", // Troque pelo número real com DDI e DDD
+  whatsapp: "5511994316716", // Troque pelo número real com DDI e DDD
   horario: "",               // Exemplo: "15h30"
   local: "",                 // Exemplo: "Salão de festas"
   endereco: "",              // Endereço para abrir no mapa

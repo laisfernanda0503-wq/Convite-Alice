@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="image.jpg" href="img/logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101710">
+  <meta name="description" content="Um convite especial para celebrar os 6 anos da Alice e a chegada do Arthur.">
+  <title>Um Conto de Amor — Alice & Arthur</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <!-- CAPA DO CONTO -->
+  <header class="cover" id="topo">
+    <nav class="top-nav">
+      <a href="#topo" class="brand">A <span>✦</span> A</a>
+      <span class="nav-caption">UM CONTO DE AMOR</span>
+      <a href="#convite" class="nav-link">O convite <span>↗</span></a>
+    </nav>
+
+    <div class="cover-content">
+      <p class="eyebrow cover-eyebrow">
+        <span></span> UMA HISTÓRIA ESPECIAL <span></span>
+      </p>
+
+      <h1>Era uma vez<br><em>dois motivos</em><br>para celebrar.</h1>
+
+      <p class="cover-description">
+        Uma princesa completa mais um capítulo.
+        Um pequeno príncipe está prestes a chegar.
+        E você faz parte dessa história.
+      </p>
+
+      <button class="open-book-button" id="openBook" type="button">
+        <span class="button-icon">✧</span>
+        <span>ABRIR NOSSO CONTO</span>
+        <span class="button-arrow">↓</span>
+      </button>
+    </div>
+
+    <div class="book-stage" id="bookStage" aria-label="Livro mágico de conto de fadas">
+      <div class="book">
+        <div class="book-pages"></div>
+        <div class="book-back"></div>
+        <div class="book-cover">
+          <div class="book-border">
+            <span class="book-small">UMA HISTÓRIA DE</span>
+            <span class="book-title">Amor</span>
+            <span class="book-apple">♥</span>
+            <span class="book-names">ALICE & ARTHUR</span>
+            <span class="book-year">2027</span>
+          </div>
+        </div>
+      </div>
+      <div class="book-shadow"></div>
+    </div>
+
+    <div class="cover-bottom">
+      <span>14 . 01 . 2027</span>
+      <span class="cover-line"></span>
+      <span>ROLE PARA DESCOBRIR</span>
+    </div>
+
+    <a class="scroll-cue" href="#convite" aria-label="Rolar para o convite">↓</a>
+  </header>
+
+  <main id="convite">
+    <!-- APRESENTAÇÃO -->
+    <section class="story-section intro-section reveal">
+      <div class="section-kicker"><span>✦</span> VOCÊ ESTÁ CONVIDADO <span>✦</span></div>
+
+      <h2>Dois capítulos.<br><em>Um amor infinito.</em></h2>
+
+      <p class="intro-copy">
+        A vida escreve suas histórias mais bonitas nos momentos
+        que dividimos com quem amamos. Em um único dia, vamos
+        celebrar a alegria de ver nossa menina crescer e a emoção
+        de receber um novo amor na família.
+      </p>
+
+      <div class="names-lockup">
+        <div class="name-block">
+          <span class="name-overline">NOSSA PRINCESA</span>
+          <span class="script-name">Alice</span>
+          <span class="name-detail">6 ANOS DE MAGIA</span>
+        </div>
+
+        <div class="ampersand">&</div>
+
+        <div class="name-block">
+          <span class="name-overline">NOSSO PEQUENO PRÍNCIPE</span>
+          <span class="script-name">Arthur</span>
+          <span class="name-detail">UM NOVO AMOR A CAMINHO</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- OS DOIS MOTIVOS DA FESTA -->
+    <section class="celebration-section">
+      <div class="celebration-image" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="tree tree-one"></div>
+        <div class="tree tree-two"></div>
+        <div class="forest-mist"></div>
+        <div class="red-apple">♥</div>
+      </div>
+
+      <div class="celebration-content reveal">
+        <p class="section-kicker">NOSSA HISTÓRIA</p>
+        <h2>Uma festa,<br><em>dois encantos.</em></h2>
+
+        <div class="celebration-item">
+          <span class="item-number">01</span>
+          <div>
+            <h3>Os 6 anos da Alice</h3>
+            <p>
+              Um dia de fantasia, sorrisos e sonhos.
+              Nossa princesa merece uma comemoração tão
+              especial quanto a alegria que ela traz.
+            </p>
+          </div>
+        </div>
+
+        <div class="celebration-item">
+          <span class="item-number">02</span>
+          <div>
+            <h3>O chá de bebê do Arthur</h3>
+            <p>
+              Um novo capítulo está começando.
+              Vamos cercar nosso pequeno príncipe de carinho
+              e preparar seu mundo para a chegada dele.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA DO EVENTO -->
+    <section class="date-section reveal" id="data">
+      <div class="date-decoration">✳</div>
+      <p class="section-kicker">GUARDE ESTA DATA</p>
+      <h2>O dia em que a magia acontece</h2>
+
+      <div class="date-display">
+        <div class="date-month">JANEIRO</div>
+        <div class="date-day">14</div>
+        <div class="date-year">2027</div>
+      </div>
+
+      <p class="date-weekday">QUINTA-FEIRA</p>
+
+      <div class="event-details">
+        <div class="detail">
+          <span class="detail-icon">◷</span>
+          <span class="detail-label">HORÁRIO</span>
+          <strong id="eventTime">A definir</strong>
+        </div>
+        <div class="detail-divider"></div>
+        <div class="detail">
+          <span class="detail-icon">⌖</span>
+          <span class="detail-label">LOCAL</span>
+          <strong id="eventPlace">A definir</strong>
+        </div>
+      </div>
+
+      <a id="mapLink" class="text-link" href="#" target="_blank" rel="noopener" hidden>
+        VER LOCALIZAÇÃO NO MAPA ↗
+      </a>
+    </section>
+
+    <!-- PRESENTINHOS -->
+    <section class="gift-section reveal">
+      <div class="gift-heading">
+        <p class="section-kicker">UM CARINHO PARA O ARTHUR</p>
+        <h2>Pequenos presentes,<br><em>grandes gestos.</em></h2>
+        <p>
+          Sua presença é o mais importante! Mas, se quiser
+          presentear nosso bebê, aqui vão algumas sugestões
+          para ajudar nos preparativos.
+        </p>
+      </div>
+
+      <div class="gift-content">
+        <div class="gift-symbol" aria-hidden="true">♡</div>
+        <p class="gift-overline">SUGESTÃO DE FRALDAS</p>
+        <h3>Qual tamanho você prefere levar?</h3>
+
+        <div class="diaper-picker" role="group" aria-label="Escolha o tamanho da fralda">
+          <button type="button" class="size-option" data-size="RN" aria-pressed="false">RN</button>
+          <button type="button" class="size-option" data-size="P" aria-pressed="false">P</button>
+          <button type="button" class="size-option" data-size="M" aria-pressed="false">M</button>
+          <button type="button" class="size-option" data-size="G" aria-pressed="false">G</button>
+        </div>
+
+        <p id="sizeHelp" class="size-help" aria-live="polite">
+          Toque em um tamanho para selecioná-lo.
+        </p>
+
+        <div class="gift-alternatives">
+          <span>♡ Roupinhas</span>
+          <span>♡ Itens de higiene</span>
+          <span>♡ Pequenos mimos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIRMAÇÃO -->
+    <section class="rsvp-section reveal" id="confirmar">
+      <div class="rsvp-stars" aria-hidden="true">✦　✧　✦</div>
+      <p class="section-kicker">NOSSO CONTO FICA MAIS BONITO COM VOCÊ</p>
+      <h2>Vamos celebrar<br><em>juntos?</em></h2>
+      <p class="rsvp-copy">
+        Sua presença vai deixar esse dia ainda mais especial.
+        Confirme pelo WhatsApp e venha fazer parte dessas
+        duas histórias de amor.
+      </p>
+
+      <button type="button" class="whatsapp-button" id="rsvpButton">
+        <span class="whatsapp-icon">◉</span>
+        CONFIRMAR PRESENÇA
+        <span class="button-arrow">↗</span>
+      </button>
+
+      <p class="rsvp-note">14 DE JANEIRO DE 2027 · ALICE & ARTHUR</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-mark">A <span>✦</span> A</span>
+    <p>Feito com amor para celebrar a vida.</p>
+    <span class="footer-heart">♥</span>
+  </footer>
+
+  <button id="backTop" class="back-top" type="button" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>

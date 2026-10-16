@@ -173,36 +173,50 @@ if (CONFIG.endereco.trim()) {
   mapLink.hidden = false;
 }
 
+/* =========================================
+   ESCOLHA DO TAMANHO DA FRALDA
+========================================= */
+
+sizeOptions.forEach(button => {
+  button.addEventListener("click", () => {
+    selectedSize = button.dataset.size;
+
+    sizeOptions.forEach(option => {
+      const isSelected = option === button;
+
+      option.setAttribute("aria-pressed", String(isSelected));
+    });
+
+    sizeHelp.textContent =
+      `Você escolheu fralda tamanho ${selectedSize}. ` +
+      "Essa escolha será incluída na mensagem do WhatsApp.";
+
+    createSparkles(5);
+  });
+});
 
 /* =========================================
+   CONFIRMAÇÃO PELO WHATSAPP
+========================================= */
+
+r/* =========================================
    CONFIRMAÇÃO PELO WHATSAPP
 ========================================= */
 
 rsvpButton.addEventListener("click", () => {
   const phone = CONFIG.whatsapp.replace(/\D/g, "");
 
-  if (!phone || phone === "5511994316716") {
-    alert(
-      "Antes de usar a confirmação, coloque seu número real " +
-      "de WhatsApp na variável CONFIG.whatsapp, no arquivo script.js."
-    );
-    return;
-  }
-
-
   const message =
     `Olá! Vim pelo convite da festa da ${CONFIG.nomeAniversariante} ` +
     `e do chá de bebê do ${CONFIG.nomeBebe}.\n\n` +
-    `Gostaria de Embarcar nessa história no dia ${CONFIG.data}.` +
-    diaperMessage +
-    "\n\nAté lá! ❤️";
+    `Gostaria de confirmar minha presença no dia ${CONFIG.data}.\n\n` +
+    "Até lá! ❤️";
 
   const whatsappURL =
     `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   window.open(whatsappURL, "_blank", "noopener,noreferrer");
 });
-
 /* =========================================
    BOTÃO VOLTAR AO TOPO
 ========================================= */

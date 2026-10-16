@@ -217,7 +217,7 @@ rsvpButton.addEventListener("click", () => {
   const message =
     `Olá! Vim pelo convite da festa da ${CONFIG.nomeAniversariante} ` +
     `e do chá de bebê do ${CONFIG.nomeBebe}.\n\n` +
-    `Gostaria de confirmar minha presença no dia ${CONFIG.data}.` +
+    `Gostaria de Embarcar nessa história no dia ${CONFIG.data}.` +
     diaperMessage +
     "\n\nAté lá! ❤️";
 

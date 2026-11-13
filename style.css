@@ -1243,8 +1243,27 @@ a {
 .gift-group small {
   display: block;
   margin-top: 10px;
-  color: #625d4e;
+  color: #3b3930;
   font-family: var(--serif);
   font-size: 15px;
   line-height: 1.6;
+}
+
+#certificacao{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5a4d38;
+  font-size: 18px;
+}
+#mimos{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #7a5d4a;
+}
+
+#sapato{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #7a5d4a;
+}
+#roupa{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #7a5d4a;
 }

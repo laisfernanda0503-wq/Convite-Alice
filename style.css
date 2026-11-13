@@ -1209,3 +1209,42 @@ a {
 .whatsapp-button {
   text-decoration: none;
 }
+
+/* PRESENTES DA ALICE E DA LIZ */
+
+.gift-group {
+  padding: 22px 10px;
+  border-bottom: 1px solid #c4b28f;
+}
+
+.gift-group h3 {
+  margin: 0 0 8px;
+  color: #87652e;
+  font-family: var(--script);
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.gift-subtitle {
+  display: block;
+  margin-bottom: 14px;
+  color: #84652c;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.gift-group p {
+  margin: 8px 0;
+  color: #2a281d;
+  font-family: var(--serif);
+  font-size: 23px;
+}
+
+.gift-group small {
+  display: block;
+  margin-top: 10px;
+  color: #625d4e;
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.6;
+}

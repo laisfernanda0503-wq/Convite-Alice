@@ -5,13 +5,13 @@
 
 const CONFIG = {
   whatsapp: "5511994316716", // Troque pelo número real com DDI e DDD
-  horario: "",               // Exemplo: "15h30"
+  horario: "14:30",               // Exemplo: "15h30"
   local: "",                 // Exemplo: "Salão de festas"
   endereco: "",              // Endereço para abrir no mapa
   nomeAniversariante: "Alice",
   idade: 6,
   nomeBebe: "Liz",
-  data: "14/01/2027"
+  data: "16/01/2027"
 };
 
 /* =========================================

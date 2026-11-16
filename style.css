@@ -1116,6 +1116,12 @@ a {
 }
 
 @media (max-width: 420px) {
+
+  #certificacao{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5a4d38;
+  font-size: 13px;
+}
   .top-nav {
     height: 65px;
     padding: 0 18px;
@@ -1252,7 +1258,6 @@ a {
 #certificacao{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #5a4d38;
-  font-size: 18px;
 }
 #mimos{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
